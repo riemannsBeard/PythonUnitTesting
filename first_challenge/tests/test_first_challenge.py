@@ -17,9 +17,9 @@ class EasyTestCase(unittest.TestCase):
 class MediumTestCase(unittest.TestCase):
     def test_medium_input(self):
         # Todo: make sure that the program raises an exception whenever there is any non-english charts. Ex. !@#$%^.
-        # pass
-        with self.assertRaises(TypeError):
-            self.assertEqual('Mo@!^', 2)
+        pass
+        # with self.assertRaises(TypeError):
+        #     self.assertEqual('Mo@!^', 2)
 
     def test_medium_input_two(self):
         # Todo: make sure that your program does not count paces. It should only count english alpha.
