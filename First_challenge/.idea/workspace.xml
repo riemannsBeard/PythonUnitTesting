@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8680707b-cfbf-4abb-9cb9-3347dd2edaa9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_challenge/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../first_challenge_skeleton/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_challenge/.idea/First_challenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../first_challenge_skeleton/.idea/First_challenge.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_challenge/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../first_challenge_skeleton/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_challenge/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../first_challenge_skeleton/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_challenge/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../first_challenge_skeleton/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_challenge/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../first_challenge_skeleton/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_challenge/first_challenge.py" beforeDir="false" afterPath="$PROJECT_DIR$/../first_challenge_skeleton/first_challenge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_challenge/tests/test_first_challenge.py" beforeDir="false" afterPath="$PROJECT_DIR$/../first_challenge_skeleton/tests/test_first_challenge.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,16 +109,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../first_challenge_skeleton/first_challenge.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
