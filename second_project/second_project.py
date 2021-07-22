@@ -1,3 +1,8 @@
+"""
+the Counter class is going to able users to add, delete, and reset a counter object.
+"""
+
+
 class Counter:
     def __init__(self):
         self._value = 0
@@ -6,7 +11,10 @@ class Counter:
         self._value += 1
 
     def remove(self):
-        self._value -= 1
+        if self._value <= 0:
+            self.clear()
+        else:
+            self._value -= 1
 
     def clear(self):
         self._value = 0
