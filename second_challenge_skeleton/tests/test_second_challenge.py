@@ -42,22 +42,34 @@ class MediumTestCase(unittest.TestCase):
     def setUp(self):
         # Todo: create an object named car from the Car class
         # Todo: use the object car to start the car.
-        pass
+        self.car = Car()
+        self.car.start_car()
 
     def test_medium_input(self):
-        # Todo: raise an exception if the user tried to start the car while it's already on.
-        pass
+        # Todo: raise an exception if the user tried to start the car while
+        #  it's already on.
+        with self.assertRaises(Exception):
+            self.car.start_car()
 
     def test_medium_input_two(self):
-        # Todo: use the object car to remove speed 4 times.
-        # Todo: raise an exception if the user tried to turn off the car in a speed greater than 0.
-        pass
+        # Todo: use the object car to remove speed 4 times. Todo: raise an
+        #  exception if the user tried to turn off the car in a speed greater
+        #  than 0.
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.car.remove_speed()
+
+        with self.assertRaises(Exception):
+            self.car.turn_off_car()
 
     def tearDown(self):
         # Todo: stop the car.
         # Todo: turn off the car.
         # Todo: set the object car to None.
-        pass
+        self.car.stop()
+        self.car.turn_off_car()
+        self.car = None
 
 
 class HardTestCase(unittest.TestCase):

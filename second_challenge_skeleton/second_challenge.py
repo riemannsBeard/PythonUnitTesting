@@ -8,12 +8,17 @@ class Car:
         self._start_car = False
 
     def start_car(self):
-        # Todo: implement me
-        self._start_car = True
+        if not self._start_car:
+            self._start_car = True
+        else:
+            raise Exception('The car is already started.')
 
     def turn_off_car(self):
-        # Todo: implement me
-        self._start_car = False
+        if self.current_speed() == 0:
+            self._start_car = False
+        else:
+            raise Exception('Please, make sure that the car is stopped before '
+                            'turning it off.')
 
     def add_speed(self):
         self._speed += 5
