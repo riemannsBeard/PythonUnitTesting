@@ -24,8 +24,10 @@ class Car:
         self._speed += 5
 
     def remove_speed(self):
-        # Todo: implement me
-        self._speed -= 5
+        if self.current_speed() >= 5:
+            self._speed -= 5
+        else:
+            self._speed = 0
 
     def current_speed(self):
         return self._speed

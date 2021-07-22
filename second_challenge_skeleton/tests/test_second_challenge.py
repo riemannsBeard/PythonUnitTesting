@@ -52,13 +52,13 @@ class MediumTestCase(unittest.TestCase):
             self.car.start_car()
 
     def test_medium_input_two(self):
-        # Todo: use the object car to remove speed 4 times. Todo: raise an
-        #  exception if the user tried to turn off the car in a speed greater
-        #  than 0.
-        self.car.remove_speed()
-        self.car.remove_speed()
-        self.car.remove_speed()
-        self.car.remove_speed()
+        # Todo: use the object car to add speed 4 times.
+        #  Todo: raise an exception if the user tried to turn off the car in a
+        #   speed greater than 0.
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.add_speed()
 
         with self.assertRaises(Exception):
             self.car.turn_off_car()
@@ -77,13 +77,20 @@ class HardTestCase(unittest.TestCase):
     def setUp(self):
         # Todo: create an object named car from the Car class
         # Todo: use the object car to start the car.
-        pass
+        self.car = Car()
+        self.car.start_car()
 
     def test_hard_input(self):
         # Todo: use the object car to add speed 2 times.
         # Todo: use the object car to remove speed 4 times.
         # Todo: make sure that the current speed is 0.
-        pass
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.assertEqual(self.car.current_speed(), 0)
 
     def test_hard_input_two(self):
         # Todo: use the object car to add speed 2 times.
@@ -91,13 +98,20 @@ class HardTestCase(unittest.TestCase):
         # Todo: stop the car.
         # Todo: stop the car.
         # Todo: make sure that the current speed is 0.
-        pass
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.stop()
+        self.car.stop()
+        self.car.stop()
+        self.assertEqual(self.car.current_speed(), 0)
 
     def tearDown(self):
         # Todo: stop the car.
         # Todo: turn off the car.
         # Todo: set the object car to None.
-        pass
+        self.car.stop()
+        self.car.turn_off_car()
+        self.car = None
 
 
 if __name__ == '__main__':
