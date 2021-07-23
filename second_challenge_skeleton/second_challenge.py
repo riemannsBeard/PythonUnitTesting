@@ -24,10 +24,10 @@ class Car:
         self._speed += 5
 
     def remove_speed(self):
-        if self.current_speed() >= 5:
-            self._speed -= 5
-        else:
+        if self.current_speed() <= 0:
             self._speed = 0
+        else:
+            self._speed -= 5
 
     def current_speed(self):
         return self._speed
