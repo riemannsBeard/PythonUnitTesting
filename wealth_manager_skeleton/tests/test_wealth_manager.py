@@ -1,5 +1,5 @@
 import unittest
-
+from wealth_manager import Calculator
 
 # Calculator(150000, 80000, 2019, 80000, 6666)
 # Calculator(Yearly passive income, yearly savings to invest,
@@ -17,6 +17,7 @@ import unittest
 
 # tenth year: 6666 * 10
 
+
 class TestCalculate(unittest.TestCase):
 
     def setUp(self):
@@ -24,6 +25,7 @@ class TestCalculate(unittest.TestCase):
         self._calculator_obj_two = Calculator(150000, 80000, 2019, 80000, 6666)
         self._calculator_obj_three = Calculator(150000, 90000, 2019, 80000,
                                                 6666)
+
         self._calculator_data_one = {2019: [0, 70000],
                                      2020: [1.0, 66666],
                                      2021: [2.0, 69998],
@@ -157,6 +159,7 @@ class TestCalculate(unittest.TestCase):
         with self.assertRaises(TypeError):
             Calculator(111111, 23, 234324, 3233, Exception)
 
+
 class TestGetYearsNeeded(unittest.TestCase):
     def setUp(self):
         self._calculator_obj_one = Calculator(150000, 70000, 2019, 80000, 6666)
@@ -165,13 +168,13 @@ class TestGetYearsNeeded(unittest.TestCase):
                                                 6666)
 
     def test_years_needed_easy_first(self):
-        self.assertEqual(self._calculator_obj_one.get_years_needed(), 15)
+        self.assertEqual(self._calculator_obj_one.get_years_needed(), 14)
 
     def test_years_needed_easy_second(self):
-        self.assertEqual(self._calculator_obj_two.get_years_needed(), 14)
+        self.assertEqual(self._calculator_obj_two.get_years_needed(), 13)
 
     def test_years_needed_easy_third(self):
-        self.assertEqual(self._calculator_obj_three.get_years_needed(), 13)
+        self.assertEqual(self._calculator_obj_three.get_years_needed(), 12)
 
     def test_years_needed_medium_first(self):
         pass
@@ -200,13 +203,13 @@ class TestGetApartmentsNeeded(unittest.TestCase):
                                                 6666)
 
     def test_apartments_needed_easy_first(self):
-        self.assertEqual(self._calculator_obj_one.get_apartments_needed, 23)
+        self.assertEqual(self._calculator_obj_one.get_apartments_needed(), 23)
 
     def test_apartments_needed_easy_second(self):
-        self.assertEqual(self._calculator_obj_two.get_apartments_needed, 24)
+        self.assertEqual(self._calculator_obj_two.get_apartments_needed(), 24)
 
     def test_apartments_needed_easy_third(self):
-        self.assertEqual(self._calculator_obj_three.get_apartments_needed, 23)
+        self.assertEqual(self._calculator_obj_three.get_apartments_needed(), 23)
 
     def test_apartments_needed_medium_first(self):
         pass
