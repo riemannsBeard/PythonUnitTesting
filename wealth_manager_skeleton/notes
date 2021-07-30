@@ -13,3 +13,7 @@ How to run a specific method within a test case?
 - python3.9 -m unittest tests.test_wealth_manager.TestCalculate
 .test_calculate_easy_first
 
+**IMPORTANT**
+It is required a void __init__.py file to be the directory recognized as a
+as a python project
+
