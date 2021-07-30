@@ -18,7 +18,7 @@ from wealth_manager import Calculator
 
 # tenth year: 6666 * 10
 
-@unittest.expectedFailure
+# @unittest.expectedFailure
 class TestCalculate(unittest.TestCase):
 
     def setUp(self):
