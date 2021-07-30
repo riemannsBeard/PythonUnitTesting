@@ -1,0 +1,11 @@
+Use skip for any reason.
+@unittest.skip('just because')
+
+Use skipIf to check a library version.
+@unittest.skipIf(int(sys.version[0]) >4, 'needs to be version 4')
+
+Use skipUnless to check the OS.
+Ex. @unittest.skipUnless(sys.platform.startswith('win'), 'Windows OS required')
+
+Use expectedFailure if the tests are going to pass for sure.
+@unittest.expectedFailure
