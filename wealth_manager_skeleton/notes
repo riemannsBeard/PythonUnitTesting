@@ -1,0 +1,15 @@
+How to run all the tests within your directory?
+- python3.9 -m unittest discover
+
+How to run all the tests in a specific module?
+- python3.9 -m unittest tests.test_wealth_manager
+Or
+- python3.9 -m unittest tests/test_wealth_manager.py
+
+How to run a specific test case within a module?
+- python3.9 -m unittest tests.test_wealth_manager.TestCalculate
+
+How to run a specific method within a test case?
+- python3.9 -m unittest tests.test_wealth_manager.TestCalculate
+.test_calculate_easy_first
+
