@@ -1,6 +1,7 @@
-import sys
 import unittest
+
 from wealth_manager import Calculator
+
 
 # Calculator(150000, 80000, 2019, 80000, 6666)
 # Calculator(Yearly passive income, yearly savings to invest,
@@ -89,7 +90,8 @@ class TestCalculate(unittest.TestCase):
             Year number: 2031, Apt number owned 18.0 Passive Income $143266
             Year number: 2032, Apt number owned 20.0 Passive Income $186586
             Year number: 2033, Apt number owned 23.0 Passive Income $169904
-            You can reach a passive income of $150000, but it will take: 15 years
+            You can reach a passive income of $150000, but it will take:
+            15 years
         """
         for k in self._calculator_obj_one.get_results().keys():
             self.assertEqual(self._calculator_obj_one.get_results().get(k),
@@ -110,7 +112,8 @@ class TestCalculate(unittest.TestCase):
             Year number: 2030, Apt number owned 18.0 Passive Income $186600
             Year number: 2031, Apt number owned 21.0 Passive Income $166586
             Year number: 2032, Apt number owned 24.0 Passive Income $166570
-            You can reach a passive income of $150000, but it will take: 14 years
+            You can reach a passive income of $150000, but it will take:
+            14 years
         """
         for k in self._calculator_obj_two.get_results().keys():
             self.assertEqual(self._calculator_obj_two.get_results().get(k),
@@ -130,7 +133,8 @@ class TestCalculate(unittest.TestCase):
             Year number: 2029, Apt number owned 18.0 Passive Income $149940
             Year number: 2030, Apt number owned 20.0 Passive Income $213260
             Year number: 2031, Apt number owned 23.0 Passive Income $216578
-            You can reach a passive income of $150000, but it will take: 13 years
+            You can reach a passive income of $150000, but it will take:
+            13 years
         """
         for k in self._calculator_obj_three.get_results().keys():
             self.assertEqual(self._calculator_obj_three.get_results().get(k),
@@ -269,3 +273,4 @@ class TestGetNetWorth(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

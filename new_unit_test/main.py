@@ -4,7 +4,7 @@
 To use this class you need to do: 1 - jasfhlksahfs, 2 - fdkdhafkdhf, etc.
 Ex. lc = ListChanger().
 
-The reason why we have this class is because: 1 - jasfhlksahfs, 
+The reason why we have this class is because: 1 - jasfhlksahfs,
 2 - fdkdhafkdhf, etc.
 """
 import heapq
@@ -38,4 +38,3 @@ class ListChanger:
     # This method is going to return a reverse list.
     def remove_first_and_last(self):
         return self._list[1:len(self._list) - 1]
-

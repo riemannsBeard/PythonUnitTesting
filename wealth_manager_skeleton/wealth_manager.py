@@ -1,6 +1,9 @@
-"""@author: Antonio Martín @date: jul 27 This class is going to calculate how
-many years will it take to generate passive for a given income from renting
-apts. """
+"""
+@author: Antonio Martín.
+@date: Jul, 27, 2021.
+This class is going to calculate how many years will it take to generate
+passive for a given income from renting apts.
+"""
 
 import math
 
@@ -21,7 +24,7 @@ class Calculator:
             raise TypeError('Please, make sure that the year input is an '
                             'integer number')
 
-    """
+    """/home/leibniz
         @:arg This method has no arguments
     """
 
@@ -56,9 +59,11 @@ class Calculator:
         return (self._starting_year - 1) - self._years_needed
 
     def get_apartments_needed(self):
-        key = max(self._answer, key=int) # get the greatest key in the self._answer dictionary.
-        value = self._answer[key] # get the value of the greatest key in the self._answer dictionary.
-        number_of_apartments = value[0] # get the greatest
+        key = max(self._answer,
+                  key=int)  # get the greatest key in the self._answer dictionary.
+        value = self._answer[
+            key]  # get the value of the greatest key in the self._answer dictionary.
+        number_of_apartments = value[0]  # get the greatest
         return number_of_apartments
 
     def get_net_worth(self):
@@ -70,9 +75,7 @@ class Calculator:
                   "2}".format(k, v[0], round(v[1])))
 
         print("\nYou can reach a passive income of ${0}, but it will take: "
-                "{1} years".format(self._passive_income_desired_yearly,
-                                    self.get_years_needed()))
+              "{1} years".format(self._passive_income_desired_yearly,
+                                 self.get_years_needed()))
 
-# calculator_obj_one = Calculator(150000, 70000, 2019, 80000, 6666)
-# calculator_obj_one.print_results()
-# print(calculator_obj_one.get_net_worth())
+

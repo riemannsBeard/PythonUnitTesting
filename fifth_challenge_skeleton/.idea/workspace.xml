@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3d04dca9-e974-4283-af9b-35aca84037a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_fifth_challenge.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_fifth_challenge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sixth_challenge_skeleton/sixth_challenge.py" beforeDir="false" afterPath="$PROJECT_DIR$/../sixth_challenge_skeleton/sixth_challenge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wealth_manager_skeleton/tests/test_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/../wealth_manager_skeleton/tests/test_new.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wealth_manager_skeleton/tests/test_wealth_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../wealth_manager_skeleton/tests/test_wealth_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wealth_manager_skeleton/wealth_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../wealth_manager_skeleton/wealth_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +32,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fourth_project" />
+    <property name="auto.test.manager.delay" value="1000" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RunManager" selected="Python tests.Unittests in test_fifth_challenge.py">
