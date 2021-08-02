@@ -1,12 +1,17 @@
 class Term:
     def __init__(self, coefficient, power):
-        # Todo: Implement me
-        pass
+        self._coefficient = coefficient
+        self._power = power
 
     def get_power(self):
-        # Todo: Implement me
-        pass
+        if self._power is not None:
+            return self._power
+        else:
+            raise TypeError('Please, make sure that a valid power is passed.')
 
     def get_coefficient(self):
-        # Todo: Implement me
-        pass
+        if self._coefficient is not None:
+            return self._coefficient
+        else:
+            raise TypeError('Please, make sure that a valid coefficient is passed.')
+
